@@ -1,0 +1,34 @@
+{
+  "name": "genpark-ecommerce-smart-product-comparison-decision-engine-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-attribute e-commerce product spec comparison, user review sentiment analyzer & buy decision engine.",
+  "author": "genpark",
+  "category": "marketing",
+  "tags": [
+    "product-comparison",
+    "sentiment-analyzer",
+    "buy-decision",
+    "ecommerce-ai"
+  ],
+  "inputs": {
+    "product_ids": {
+      "type": "array"
+    },
+    "user_preferences": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "top_recommendation": {
+      "type": "string"
+    },
+    "comparison_matrix": {
+      "type": "object"
+    },
+    "value_for_money_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
